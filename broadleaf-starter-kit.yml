@@ -9,7 +9,7 @@ application:
     input.app-fork: qubell-bazaar # Broadleaf DemoSite Fork name
     input.app-branch: solr-cloud # solr-green (Branch name in your fork)
     input.app-quantity: 1 # Numbers of hosts with application for "Application Server" Component
-    input.operating-system: {image: "us-east-1/ami-1ba18d72", identity: ec2-user} # image/identity pair for describing Operating system.
+    input.operating-system: {image: "us-east-1/ami-86452990", identity: ubuntu} # image/identity pair for describing Operating system.
     input.instance-size: "m1.small" # EC2 Instance type 
     input.solr-collections: ["https://raw.github.com/qubell-bazaar/DemoSite/solr-cloud/core/src/main/resources/cores/cores.tar.gz"] # Archive with cores for "Solr Cloud" component
     input.solr-version: "4.4.0" # Solr Version
@@ -80,7 +80,7 @@ application:
                  suggestions:
                      "centos": {image: "us-east-1/ami-bf5021d6", identity: root} # Here string "centos" mapped on object {image: "us-east-1/ami-bf5021d6", identity: root} etc.
                      "amazon": {image: "us-east-1/ami-1ba18d72", identity: ec2-user}
-                     "ubuntu1204": {image: "us-east-1/ami-967edcff", identity: ubuntu}
+                     "ubuntu1204": {image: "us-east-1/ami-86452990", identity: ubuntu}
                      "ubuntu1004": {image: "us-east-1/ami-9f3906f6", identity: ubuntu}
               db-name:
                  type: configuration(string) # It's a pin with configuration type and value will be a string
